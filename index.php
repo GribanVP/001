@@ -1,6 +1,12 @@
 
 <?php
+$me = [
+    'name' => 'Виталий',
+    'surname' => 'Грибан',
+    'profession' => 'php-разработчик'
+];
 
+$fullName = "{$me ['name']} {$me['surname]}";
 ?>
 <!doctype html>
 <html lang="ru">
@@ -9,7 +15,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Резюме - {{Имя}} {{Фамилия}}</title>
+    <title>Резюме - <?= $me[0]> <?= $me[1]></title>
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Load Fonts -->
@@ -38,15 +44,15 @@
             <div class="main__center">
                 <div class="main__center">
                     <div class="main__center-smallbox">
-                        <h1>Привет! Меня зовут {{Имя}} {{Фамилия}}</h1>
-                        <p>Я {{Профессия}}</p>
+                        <h1>Привет! Меня зовут <?= $fullName></h1>
+                        <p>Я <?= $me[2]></p>
                     </div>
                 </div>
             </div>
         </main>
 
         <footer>
-            <small>© {{Текущий год}} {{Имя}} {{Фамилия}}</small>
+            <small>© <?=date('Y')> <?=$fullName></small>
         </footer>
     </div>
     <!-- end Wrapper -->
