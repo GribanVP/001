@@ -44,7 +44,7 @@ $fullName = "{$me ['name']} {$me['surname]}";
             <div class="main__center">
                 <div class="main__center">
                     <div class="main__center-smallbox">
-                        <h1>Привет! Меня зовут <?= $fullName></h1>
+                        <h1>Привет! Меня зовут <?= $fullName ?></h1>
                         <p>Я <?= $me[2]></p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ $fullName = "{$me ['name']} {$me['surname]}";
         </main>
 
         <footer>
-            <small>© <?=date('Y')> <?=$fullName></small>
+            <small>© <?=date('Y')?> <?=$fullName ?></small>
         </footer>
     </div>
     <!-- end Wrapper -->
