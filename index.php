@@ -1,12 +1,5 @@
-
 <?php
-$me = [
-    'name' => 'Виталий',
-    'surname' => 'Грибан',
-    'profession' => 'php-разработчик'
-];
-
-$fullName = "{$me ['name']} {$me['surname]}";
+include 'C:\xampp\htdocs\lib\data.php'
 ?>
 <!doctype html>
 <html lang="ru">
@@ -15,7 +8,7 @@ $fullName = "{$me ['name']} {$me['surname]}";
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Резюме - <?= $me[0]> <?= $me[1]></title>
+    <title>Резюме - <?= $fullName ?></title>
     <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Load Fonts -->
@@ -45,7 +38,7 @@ $fullName = "{$me ['name']} {$me['surname]}";
                 <div class="main__center">
                     <div class="main__center-smallbox">
                         <h1>Привет! Меня зовут <?= $fullName ?></h1>
-                        <p>Я <?= $me[2]></p>
+                        <p>Я <?= $me['name'] ?></p>
                     </div>
                 </div>
             </div>
